@@ -1,4 +1,5 @@
-﻿using System;
+﻿//колекцією розуміється деяка група об'єктів
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -15,7 +16,8 @@ class ex1
         }
 
         char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y' };
-        Stack<char> stack = new Stack<char>();
+        Stack<char> stack = new Stack<char>(); //станній доданий елемент буде першим, що витягується
+
 
         foreach (char c in File.ReadAllText(filePath))
         {

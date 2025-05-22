@@ -3,6 +3,9 @@ using System.Collections;
 using System.IO;
 
 public class NumberProcessor : IEnumerable, IComparer, ICloneable
+//IEnumerable — дозволяє перебирати числа через foreach
+//IComparer — для можливого сортування
+//ICloneable — створення копії об’єкта
 {
     private ArrayList inRange = new ArrayList();
     private ArrayList lessThanA = new ArrayList();
